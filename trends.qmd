@@ -1,0 +1,28 @@
+---
+title: "Trends"
+---
+
+```{r}
+#| message: false
+library(tidyverse)
+```
+
+```{r}
+attacks <- read_rds("data/attacks.rds")
+```
+
+```{r}
+attacks |> 
+  filter(Fatal_clean != "Unknown") |> 
+  add_count(Activity) |> 
+  filter(n >= 50) |> 
+  ggplot(aes(y = fct_infreq(Activity), fill = Fatal_clean)) +
+  geom_bar() +
+  labs(
+    title = "Fatal vs Non-Fatal Shark Attacks by Activity",
+    x = "Count",
+    y = "Activity",
+    fill = "Outcome"
+  ) +
+  theme_minimal()
+```
