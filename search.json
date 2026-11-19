@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Shark Attacks",
+    "section": "",
+    "text": "The Global Shark Attack File compiles documented encounters between humans and sharks worldwide. Tracking historical records across decades, this dataset provides valuable insights into where human-shark interactions occur, helping researchers and the public better understand shark behavior.\nWhile sharks frequently capture headlines and popular imagination, fear of shark attacks is drastically out of proportion to the actual risk. Millions of people enter the ocean every year safely, and unprovoked shark encounters remain extraordinarily rare compared to everyday hazards.\nExplore the rest of this site to dive into the data: - The Map page displays the global distribution of reported shark attacks across different countries. - The Trends page examines historical patterns over time and breaks down encounters by ocean activity and outcome severity."
+  },
+  {
+    "objectID": "map.html",
+    "href": "map.html",
+    "title": "Map",
+    "section": "",
+    "text": "Rows: 5094 Columns: 15\n── Column specification ────────────────────────────────────────────────────────\nDelimiter: \",\"\nchr (14): Case_Number, Date, Type, Country, Area, Location, Activity, Name, ...\ndbl  (1): Year\n\nℹ Use `spec()` to retrieve the full column specification for this data.\nℹ Specify the column types or set `show_col_types = FALSE` to quiet this message."
+  }
+]
